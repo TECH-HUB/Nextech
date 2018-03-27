@@ -1,0 +1,61 @@
+.main-info{
+height: 150px;
+}
+.main-info div{
+    margin-top: 10px;
+}
+.main-info h4{
+font-family: "Fjalla One";
+font-size: 20px;
+font-weight: normal;
+}
+.main-info p{
+font-size: 15px;
+}
+#services{
+    height:718px;
+    background-color:#252525;
+    // #046738
+}
+#services h4{
+    color: #ffff;
+}
+.services-h4 hr{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    width: 200px;
+    background-color:#046738;
+}
+.services-h4::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    left: 572px;
+    display: block;
+    clear: both;
+    background-color: #046738;
+}
+#services i{
+    color: #046738;
+}
+#services img{
+    height: 300px;
+    width: 400px;
+}
+#services .col-md-6{
+    margin-top: 10px;
+}
+.services-h4{
+    font-size: 30px;
+}
+.work{
+    height:250px;
+    width: 100%;
+    background-color: #046738;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer{
+    margin-top:0px;
+}
