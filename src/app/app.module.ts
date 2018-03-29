@@ -7,12 +7,14 @@ import { MDBBootstrapModule } from './typescripts/free';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import {RouterModule} from '@angular/router'
+import {RouterModule} from '@angular/router';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,10 @@ import {RouterModule} from '@angular/router'
       {
         path:'',
         component:HomeComponent
+      },
+      {
+        path:'about',
+        component:AboutComponent
       },
       {
         path:'**',

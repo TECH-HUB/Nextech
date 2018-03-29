@@ -1,3 +1,8 @@
+.h2-responsives{
+    font-size:30px;
+    font-weight: 700;
+    font-family:Roboto Slab,Serif
+}
 .main-info{
 height: 150px;
 }
@@ -55,6 +60,25 @@ font-size: 15px;
     background-color: #046738;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.work-h4 hr{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    width: 200px;
+    background-color:#ffff;
+}
+.work-h4::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    left: 572px;
+    display: block;
+    clear: both;
+    background-color: #ffff;
+}
+.fa-link{
+    color: #ffff;
 }
 footer{
     margin-top:0px;

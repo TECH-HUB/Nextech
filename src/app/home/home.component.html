@@ -1,11 +1,8 @@
 <header>
-  <!--Navbar-->
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark ">
-    
-    <!-- Navbar brand -->
     <logo>
       <a class="navbar-brand clear-fix" href="#">
-        <img src="assets/logo.png" class="" style="height: 50px;width: 250px" />
+        <img src="assets/logo.png" class="" style="height: 40px;width: 200px" />
       </a>
     </logo>
     
@@ -20,7 +17,7 @@
           </a>
         </li>
         <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link nav-a" href="about/about.component.html" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">ABOUT US</a>
+          <a class="nav-link nav-a" routerLink="/about" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">ABOUT US</a>
         </li>
         <li class="nav-item waves-light" mdbRippleRadius>
           <a class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
@@ -56,8 +53,8 @@
           <!-- <img class="d-block w-100 caro-img" src="" alt="First slide"> -->
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
-        <div class="carousel-caption float-right">
-          <h2 class="h2-responsive">Software Development</h2>
+        <div class="carousel-caption animated bounceIn">
+          <h2 class="h2-responsives">Software Development</h2>
           <p>Improve productivity by increasing effeiciency</p>
         </div>
       </div>
@@ -70,8 +67,8 @@
           <!-- <img class="d-block w-100 caro-img" src="" alt="Second slide"> -->
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
-        <div class="carousel-caption">
-          <h2 class="h2-responsive">Responsive Website</h2>
+        <div class="carousel-caption animated bounceIn">
+          <h2 class="h2-responsives">Responsive Website</h2>
           <p>Wider reach through different devices and resolution</p>
         </div>
       </div>
@@ -83,8 +80,8 @@
           <!-- <img class="d-block w-100 caro-img" src="" alt="Second slide"> -->
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
-        <div class="carousel-caption">
-          <h2 class="h2-responsive">Software Consultancy</h2>
+        <div class="carousel-caption animated bounceIn">
+          <h2 class="h2-responsives">Software Consultancy</h2>
           <p></p>
         </div>
       </div>
@@ -171,46 +168,50 @@
         </div>
       </section>
       <section class="work ">
-        <h4 class="text-center services-h4">
+        <h4 class="text-center work-h4">
           <strong>Our Recent Work</strong>
           <hr>
         </h4>
         <p class="text-center" style="color: #ffff;">
          Look at some of the recent projects we have completed for our valuble clients
         </p>
-<div class=" container row">
+<div class=" container">
+  <div class="row">
 <div col-md-3>
-    <div class="view overlay hm-red-strong" style="height: 162px;width: 270px">
-      <img src="assets/finance.png" class="img-fluid"/>
-      <div class="mask flex-center">
-        <p class="white-text">A Software</p>
-      </div>
-    </div>
-</div>
-<div col-md-3>
-  <div class="view overlay hm-red-strong" style="height: 162px;width: 270px">
+  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
     <img src="assets/finance.png" class="img-fluid" />
     <div class="mask flex-center">
-      <p class="white-text">A Software</p>
+      <a href="https://example.com" class="white-text" target="_blank">
+        <i class="fa fa-link"></i>
+      </a>
     </div>
   </div>
 </div>
 <div col-md-3>
-  <div class="view overlay hm-red-strong" style="height: 162px;width: 270px">
+  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
     <img src="assets/finance.png" class="img-fluid" />
     <div class="mask flex-center">
-      <p class="white-text">A Software</p>
+      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
     </div>
   </div>
 </div>
 <div col-md-3>
-    <div class="view overlay hm-red-strong" style="height: 162px;width: 270px">
-      <img src="assets/finance.png" class="img-fluid"/>
-      <div class="mask flex-center">
-        <p class="white-text">A Software</p>
-      </div>
+  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+    <img src="assets/finance.png" class="img-fluid" />
+    <div class="mask flex-center">
+      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
     </div>
+  </div>
 </div>
+<div col-md-3>
+  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+    <img src="assets/finance.png" class="img-fluid" />
+    <div class="mask flex-center">
+      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
+    </div>
+  </div>
+</div>
+  </div>
 </div>
       </section>
       <footer class="page-footer" style="margin-bottom: 0px">
