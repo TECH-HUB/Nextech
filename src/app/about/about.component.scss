@@ -34,3 +34,26 @@ margin-top: 50px;
     text-align: left;
     font-size: 18;   
 }
+.h2-text{
+    margin-bottom: 0px;
+}
+.h2-text hr{
+    margin-bottom: 0px;
+    background-color: #046738;
+    margin-top: 0px;
+    width: 226px;
+}
+.h2-text::after{
+    content: '';
+    position: absolute;
+    margin-top: 0px;
+    width: 80px;
+    height: 5px;
+    left: 115px;
+    display: block;
+    clear: both;
+    background-color: #046738;
+}
+.members{
+        margin-top: 20px;
+}
