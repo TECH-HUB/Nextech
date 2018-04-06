@@ -1,0 +1,27 @@
+#link{
+    color:#000000;
+    font-family:Fjalla One;
+    font-size: 15px; 
+    font-weight: bold;
+}
+#link :hover{
+    background-color: #046738;
+    color: aliceblue;
+}
+#title{
+    height: 100px;
+    width: 100%;
+    background-color:#046738;
+    padding: 20px;
+    margin-top: 75px;
+}
+.breadcrumb{
+    background-color: transparent;
+}
+.breadcrumb .active{
+    color: rgb(182, 204, 195);
+}
+.h2-responsive{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

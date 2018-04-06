@@ -1,0 +1,339 @@
+<header>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark white fixed-top scrolling-navbar ie-nav" [containerInside]="false">
+    <logo>
+      <a class="navbar-brand clear-fix" href="#">
+        <img src="assets/logo.png" class="" style="height: 40px;width: 200px" />
+      </a>
+    </logo>
+
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">HOME
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link nav-a" routerLink="/about" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">ABOUT US</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
+        </li>
+        <li class="nav-item active waves-light" mbdRippleRadius>
+          <a class="nav-link nav-a" routerLink="/portifolio" style="color:#046738;font-family:Fjalla One; font-size: 15px; font-weight: bold;">PORTFOLIO
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">
+            MORE
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Forum</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Join Forum</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">News</a>
+          </div>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/contact" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">CONTACT US</a>
+        </li>
+      </ul>
+    </links>
+    <!-- Collapsible content -->
+
+  </mdb-navbar>
+</header>
+<main>
+  <section id="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <ol class="breadcrumb pull-right">
+            <li class="breadcrumb-item">
+              <a routerLink="" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Portifolio</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- the portifolio class carousel with multi-item cards -->
+  <div id="slide">
+    <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+      <!--First slide-->
+      <mdb-slide>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/brand_logo.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NexTech</h4>
+                <p>
+                  This is our first web system we have developed as a team. it proves that we can get work done. it is also the first step
+                  to the revolution of web development using a variety of frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/responsive.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Responsive Designs</h4>
+                <p>
+                  We build responsive web systems with responsive characteristics depending on the devices they are viewed through. This gives
+                  every user a feeling of importance. We care about every user's display.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/ux.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">User Experience (UX)</h4>
+                <p>
+                  We develop systems that are easily usable by any user without specific training. In short, we build every system with a sense
+                  of simplicity to enhance a better human-computer interactyion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mdb-slide>
+      <!--/First slide-->
+      <!--Second slide-->
+      <mdb-slide>
+        <div class="row">
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/ui.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">User Interface(UI)</h4>
+                <p>
+                  In addition, we develop systems that are appealing to our users. Despite the aim of making relevevant systems, we make systems
+                  that are appealing to our users.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/cms.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Content Management Systems</h4>
+                <p>
+                  Among our greatest works is the development of content management systems, systems that support creation and modification
+                  of content by various users.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card" id="nextech">
+              <img class="img-fluid" src="assets/web_apps.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Development Diversity</h4>
+                <p>
+                  we develop cross-platform web applications as well. this means that we can develop a website and an accompanying application
+                  as well, tcompatible all smart phones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mdb-slide>
+      <!--/Second slide-->
+      <!--Third slide-->
+      <!--
+    <mdb-slide>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </mdb-slide>
+-->
+      <!--/Third slide-->
+    </mdb-carousel>
+  </div>
+
+
+  <!-- what people say about us -->
+  <section id="what-people-say-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>What People Say About Us</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-people-say">
+    <div class="container-fluid">
+      <!-- first row of previews -->
+      <div class="row">
+        <div class="col-md-6">
+          <!--First review-->
+          <div class="card card-body">
+            <div class="media mb-1" id="circle">
+              <a class="media-left waves-light">
+                <img class="rounded-circle" src="assets/2.jpg" alt="Generic placeholder image">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">PHP developer</h4>
+                <ul class="rating inline-ul">
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                </ul>
+                <p>
+                  These are the best developers i know. They have a certain level of commitment to every task at hand. i believe that if you
+                  trust them with an assignment, they will get it done. Simply, they are the best group of developers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--First review-->
+          <div class="card card-body">
+            <div class="media mb-1" id="circle">
+              <a class="media-left waves-light">
+                <img class="rounded-circle" src="assets/3.png" alt="Generic placeholder image">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Laravel developer</h4>
+                <ul class="rating inline-ul">
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star amber-text"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                </ul>
+                <p>
+                  I enjoyed working with you guys. You are the best group of developers i have ever worked with. I look forward to working
+                  with you again. otherwise, keep up the good work. You are changing the world of web development today
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="page-footer" style="margin-bottom: 0px">
+  <div class="teal darken-4">
+    <div class="container-fluid container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="center">About NexTech</h3>
+          <hr style="background-color: whitesmoke">
+          <ul class="navbar-nav nav">
+            <li>Company Information</li>
+            <li>Privacy Policy</li>
+            <li>Terms of use</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Social</h3>
+          <hr style="background-color: whitesmoke">
+          <p> Stay up-to-date through our social media channels:</p>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/" style="background-color: transparent" class=" waves-effect waves-light">
+                <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</li>
+            <li class="nav-item">
+              <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Important Links</h3>
+          <hr style="background-color: whitesmoke">
+          <ul>
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+            <li>
+              <a href="#!">Business Partnerships</a>
+            </li>
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container-fluid" style="background-color: #046738">
+      <p>All Rights Reserved |&copy; 2018 | NexTech</p>
+    </div>
+  </div>
+</footer>

@@ -8,13 +8,17 @@ import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {RouterModule} from '@angular/router';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortifolioComponent } from './portifolio/portifolio.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent,
+    PortifolioComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,14 @@ import { AboutComponent } from './about/about.component'
       {
         path:'about',
         component:AboutComponent
+      },
+      {
+        path:'portifolio',
+        component:PortifolioComponent
+      },
+      {
+        path:'contact',
+        component: ContactComponent
       },
       {
         path:'**',

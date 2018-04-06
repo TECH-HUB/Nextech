@@ -1,0 +1,153 @@
+<header>
+  <mdb-navbar SideClass="navbar navbar-expand-lg fixed-top navbar-dark white scrolling-navbar ie-nav" [containerInside]="false">
+    <logo>
+      <a routerLink="" class="navbar-brand clear-fix">
+        <img src="assets/logo.png" class="" style="height: 40px;width: 200px" />
+      </a>
+    </logo>
+    
+    <links>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a routerLink="" class="nav-link" id="link">HOME</a>
+        </li>
+        <li class="nav-item waves-light" mdbRiplleRadius>
+          <a routerLink="/about" class="nav-link" id="link">ABOUT US</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/about" class="nav-link" id="link">SERVICES</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/portifolio" class="nav-link" id="link">PORTFOLIO</a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">
+            MORE
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Forum</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Join Forum</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">News</a>
+          </div>
+        </li>
+        <li class="nav-item active waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="/contact" style="color:#046738;font-family:Fjalla One; font-size: 15px; font-weight: bold;">CONTACT US
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+</header>
+<main>
+  <section id="title">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <ol class="breadcrumb pull-right">
+          <li class="breadcrumb-item">
+            <a routerLink="" class="text-white">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Contact Us</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2 class="h2-responsive text-center">Get in touch with us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>The Good to discuss</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam explicabo dicta. Distinctio quis commodi, unde sequi blanditiis doloremque eum similique ut nobis. Ipsa natus, iusto perferendis atque vitae dolores.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>Please note: all fields are required.</p>
+          <form>
+            <div class="md-form">
+              <input type="text" class="form-control" id="fname" mdbActive />
+              <label for="fname">First Name</label>
+            </div>
+            <div class="md-form">
+              <input type="text" class="form-control" id="lname" mdbActive />
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="md-form">
+              <input type="email" class="form-control" id="myEmail" data-error="wrong email" data-success="right email" mdbActive mdbInputValidate />
+              <label for="myEmail">Email Address</label>
+            </div>
+            <div class="md-form">
+Comments
+              <textarea id="comments" class="form-control" mdbActive>
+
+              </textarea>
+            </div>
+            
+            <div class="text-center">
+              <input type="submit" class="btn-block btn btn-outline-green " value="SUBMIT" mdbInputValidate/>
+            </div>        
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="page-footer" style="margin-bottom: 0px">
+  <div class="teal darken-4">
+    <div class="container-fluid container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="center">About NexTech</h3>
+          <hr style="background-color: whitesmoke">
+          <ul class="navbar-nav nav">
+            <li>Company Information</li>
+            <li>Privacy Policy</li>
+            <li>Terms of use</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Social</h3>
+          <hr style="background-color: whitesmoke">
+          <p> Stay up-to-date through our social media channels:</p>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/" style="background-color: transparent" class=" waves-effect waves-light">
+                <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</li>
+            <li class="nav-item">
+              <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Important Links</h3>
+          <hr style="background-color: whitesmoke">
+          <ul>
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+            <li>
+              <a href="#!">Business Partnerships</a>
+            </li>
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container-fluid" style="background-color: #046738">
+      <p>All Rights Reserved |&copy; 2018 | NexTech</p>
+    </div>
+  </div>
+</footer>
