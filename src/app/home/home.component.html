@@ -1,5 +1,5 @@
 <header>
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark white fixed-top scrolling-navbar ie-nav" [containerInside]="false">
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark white scrolling-navbar ie-nav" [containerInside]="false">
     <logo>
       <a class="navbar-brand clear-fix" href="#">
         <img src="assets/logo.png" class="" style="height: 40px;width: 200px" />
@@ -19,9 +19,9 @@
         <li class="nav-item waves-light" mdbRippleRadius>
           <a class="nav-link nav-a" routerLink="/about" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">ABOUT US</a>
         </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
+        <!-- <li class="nav-item waves-light" mdbRippleRadius>
           <a class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
-        </li>
+        </li> -->
         <li class="nav-item waves-light" mbdRippleRadius>
           <a routerLink="/portifolio" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">PORTFOLIO</a>
         </li>
@@ -31,8 +31,8 @@
             <span class="caret"></span>
           </a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Forum</a>
-            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Join Forum</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="https://forum.nextechdevelopers.com">Forum</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="https://forum.nextechdevelopers.com/register">Join Forum</a>
             <div class="divider dropdown-divider"></div>
             <a class="dropdown-item waves-light" mdbRippleRadius href="#">News</a>
           </div>
@@ -51,41 +51,47 @@
   <mdb-carousel [isControls]="true" class="carousel slide carousel-fade">
     <!--First slide-->
     <mdb-slide>
-      <div style="height: 450px;width: 100%;background-color: #153240;">
-        <div class="view hm-black-light animated bounceInLeft">
+      <div>
+        <div class="view animated bounceInLeft">
           <img class="d-block w-100 caro-img" src="assets/slide1.png" alt="First slide">
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
-        <div class="carousel-caption animated bounceIn">
-          <h2 class="h2-responsives">Software Development</h2>
-          <p>Improve productivity by increasing effeiciency</p>
+        <div class="carousel-caption animated bounceIn text-center">
+          <h2 class="h2-responsives">RESPONSIVE WEBDESIGN FOR <br/>YOUR BUSINESS</h2>
+          <p class="hidden-md">Nextech has a team of skilled experts in Responsive Web Design in Kenya, 
+            <br/>experienced in the latest web design technologies.</p>
         </div>
       </div>
     </mdb-slide>
     <!--/First slide-->
     <!--Second slide-->
     <mdb-slide >
-      <div style="height: 450px;width: 100%;background-color: #A30F0F;">
-        <div class="view hm-black-strong animated bounceInRight">
-          <!-- <img class="d-block w-100 caro-img" src="" alt="Second slide"> -->
+      <div>
+        <div class="view  animated bounceInRight">
+          <img class="d-block w-100 caro-img" src="assets/slide2.png" alt="Second slide">
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
         <div class="carousel-caption animated bounceIn">
-          <h2 class="h2-responsives">Responsive Website</h2>
-          <p>Wider reach through different devices and resolution</p>
+          <h2 class="h2-responsives">VERSATILE SOFTWARES DEVELOPMENT <br/> FOR YOU...</h2>
+          <p>Our software is built using the latest two-tier technology. It can work both <br/> online and locally through an intranet thereby
+          enabling you to access from any location</p>
         </div>
       </div>
+
     </mdb-slide>
     
     <mdb-slide>
-      <div style="height: 450px;width: 100%;background-color: #046738;">
-        <div class="view hm-black-strong animated bounceInRight">
-          <!-- <img class="d-block w-100 caro-img" src="" alt="Second slide"> -->
+      <div>
+        <div class="view animated bounceInRight">
+          <img class="d-block w-100 caro-img" src="assets/slide3.png" alt="Second slide">
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
         <div class="carousel-caption animated bounceIn">
-          <h2 class="h2-responsives">Software Consultancy</h2>
-          <p></p>
+          <h2 class="h2-responsives">SOFTWARE CONSULTACY ON WIDE KNOWLEDGE ON HANDLING CHALLENGES</h2>
+          <p>
+             NexTech developers are an expert, affordable IT consulting firm in Kenya providing <br/>advisory and managerial services that will meet any of
+            your short, or long-term IT objectives.
+          </p>
         </div>
       </div>
     </mdb-slide>
@@ -93,25 +99,32 @@
   </mdb-carousel>
 </div>
 <section class="text-muted main-info">
-  <div class="text-center">
+  <div class="">
+    <div class="text-center">
     <h4 class="">Your success is our success. We have a number of effective solutions for your business.</h4>
     <p>
       Visit our resources page and browse through our list of free and open source solutions for your business.
       your business process efficient
     </p>
+    </div>
+    <div class="text-center">
     <a href="" class="btn btn-outline-green">Browse Our Products</a>
+    </div>
   </div>
 </section>
 <section  id="services">
   <div class="container">
-    <h4 class="text-center services-h4"><strong>What We Offer</strong>
-      <hr>
-    </h4>
+    <div class="text-center">
+      <h4 class="services-h4">
+        <strong>What We Offer</strong>
+        <hr>
+      </h4>
+    </div>
     <p class="text-center" style="color: #ffff;">
       Read through some of the products and services we offer to our valuble clients
     </p>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" col-md-6>
         <h4>
           <span>
             <i class="fa fa-laptop md"></i>
@@ -125,7 +138,7 @@
             pleasing site.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" col-md-6>
           <h4>
             <span>
               <i class="fa fa-search"></i>
@@ -141,7 +154,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" col-md-6>
             <h4><span>
               <i class="fa fa-android"></i>
             </span>Software Development</h4>
@@ -154,7 +167,7 @@
               to your website at the touch of a button.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6"col-md-6>
             <h4>
               <span>
                 <i class="fa fa-globe"></i>
@@ -170,54 +183,67 @@
           </div>
         </div>
       </section>
-      <section class="work ">
-        <h4 class="text-center work-h4">
-          <strong>Our Recent Work</strong>
-          <hr>
-        </h4>
-        <p class="text-center" style="color: #ffff;">
-         Look at some of the recent projects we have completed for our valuble clients
-        </p>
-<div class=" container">
-  <div class="row">
-<div col-md-3>
-  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
-    <img src="assets/finance.png" class="img-fluid" />
-    <div class="mask flex-center">
-      <a href="https://example.com" class="white-text" target="_blank">
-        <i class="fa fa-link"></i>
-      </a>
-    </div>
-  </div>
-</div>
-<div col-md-3>
-  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
-    <img src="assets/finance.png" class="img-fluid" />
-    <div class="mask flex-center">
-      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
-    </div>
-  </div>
-</div>
-<div col-md-3>
-  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
-    <img src="assets/finance.png" class="img-fluid" />
-    <div class="mask flex-center">
-      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
-    </div>
-  </div>
-</div>
-<div col-md-3>
-  <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
-    <img src="assets/finance.png" class="img-fluid" />
-    <div class="mask flex-center">
-      <a href="https://example.com" target="_blank" class="white-text"><i class="fa fa-link"></i></a>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
+      <section class="work">
+        <div class="container">
+          <h4 class="text-center work-h4">
+            <strong>Our Recent Work</strong>
+            <hr>
+          </h4>
+          <p class="text-center" style="color: #ffff;">
+            Look at some of the recent projects we have completed for our valuble clients
+          </p>
+          
+            <div class="row">
+              <div class="col-md-3" col-md-3 >
+                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+                  <img src="assets/project1.png" class="img-fluid" />
+                  <div class="mask flex-center">
+                    <a href="https://smm.co.ke" class="white-text" target="_blank">
+  <h2>
+    <i class="fa fa-link"></i>
+  </h2>
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" col-md-3>
+                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+                  <img src="assets/forum.jpg" class="img-fluid" />
+                  <div class="mask flex-center">
+                    <a href="https://forum.nextechdevelopers.com" target="_blank" class="white-text">
+  <h2><i class="fa fa-link"></i></h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" col-md-3 >
+                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+                  <img src="assets/finance.png" class="img-fluid" />
+                  <div class="mask flex-center">
+                    <a href="https://example.com" target="_blank" class="white-text">
+  <h2>
+    <i class="fa fa-link"></i>
+  </h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" col-md-3>
+                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+                  <img src="assets/finance.png" class="img-fluid" />
+                  <div class="mask flex-center">
+                    <a href="https://example.com" target="_blank" class="white-text">
+  <h2>
+    <i class="fa fa-link"></i>
+  </h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </section>
-      <footer class="page-footer" style="margin-bottom: 0px">
+      <footer class="page-footer" style="padding-top: 5px">
         <div class="teal darken-4">
           <div class="container-fluid container">
             <div class="row">
@@ -236,11 +262,13 @@
                 <p> Stay up-to-date through our social media channels:</p>
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
-                    <a href="https://www.facebook.com/" style="background-color: transparent" class=" waves-effect waves-light">
+                    <a href="https://www.facebook.com/Nextech-416000388842667/" style="background-color: transparent" class=" waves-effect waves-light">
                       <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
                   </li>
-                  <li class="nav-item">
-                    <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</li>
+                <li class="nav-item">
+                  <a href="https://www.twitter.com/Nextechdevs/" style="background-color: transparent" class=" waves-effect waves-light">
+                    <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</a>
+                </li>
                   <li class="nav-item">
                     <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
                 </ul>
