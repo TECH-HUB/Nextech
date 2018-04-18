@@ -1,0 +1,427 @@
+<header>
+  <mdb-navbar SideClass="navbar navbar-expand-lg fixed-top navbar-dark white scrolling-navbar ie-nav" [containerInside]="false">
+    <logo>
+      <a routerLink="" class="navbar-brand clear-fix">
+        <img src="assets/logo.png" class="" style="height: 40px;width: 200px" />
+      </a>
+    </logo>
+
+    <links>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a routerLink="" class="nav-link" id="link">HOME</a>
+        </li>
+        <li class="nav-item waves-light" mdbRiplleRadius>
+          <a routerLink="/about" class="nav-link" id="link">ABOUT US</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/services" class="nav-link" id="link" style="color:#046738;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/portifolio" class="nav-link" id="link">PORTFOLIO</a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">
+            MORE
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbRippleRadius href="https://forum.nextechdevelopers.com">Forum</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="https://forum.nextechdevelopers.com/register">Join Forum</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="https://forum.nextechdevelopers.com">News</a>
+          </div>
+        </li>
+        <li class="nav-item active waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="/contact" id="link">CONTACT US
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+</header>
+<main>
+  <section id="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <ol class="breadcrumb pull-right">
+            <li class="breadcrumb-item">
+              <a routerLink="" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Services</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-we-offer-specific">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title"> What we offer : </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Card -->
+      <div class="card card-image mb-3" style="background-image: url(assets/web_background.jpg);" id="service-cards">
+
+        <!-- Content -->
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+            <h5 class="pink-text">
+              <i class="fa fa-globe"></i> Web Development </h5>
+            <h3 class="card-title pt-2">
+              <strong> Responsive Websites </strong>
+            </h3>
+            <p>
+              Here at NexTech we develop complete websites with auto responsive features on various device displays. We value our clients
+              taste and preferences when it comes to developing web interfaces. We have a variety of options, in terms of
+              frameworks, from which our clients can choose from.
+            </p>
+            <a class="btn btn-pink waves-light" (click)="webdev.show()" mdbRippleRadius>
+              <i class="fa fa-clone left"></i> Read More ... </a>
+          </div>
+        </div>
+        <!-- Content -->
+        <!-- modal -->
+        <div mdbModal #webdev="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true"
+          [config]="{backdrop: false, ignoreBackdropClick: true}">
+          <div class="modal-dialog modal-fluid" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="webdev.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100" id="myModalLabel"> Responsive Websites and Web Systems </h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="/assets/web.png" alt="image unavailable">
+                  </div>
+                  <div class="col-md-6">
+                    We develop websites that detect the device they are current running on and transform their appearances to suit the device
+                    display dimensions.
+                    <h4>We use various frameworks that include:</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item"> Bootstrap and Material Design for Bootstrap for resposive Interface Designs </li>
+                      <li class="list-group-item"> Google Material Design Lite for responsive Interface Designs </li>
+                      <li class="list-group-item"> UI kit to develop User interface Designs </li>
+                      <li class="list-group-item"> Materialize css framework </li>
+                      <li class="list-group-item"> JQuery and alternatives APIs such as the Fetch API </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-light" aria-label="Close" (click)="webdev.hide()" mdbRippleRadius>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+    <div class="col-md-6">
+      <!-- Card -->
+      <div class="card card-image mb-3" style="background-image: url('assets/monitor.jpg');" id="service-cards">
+
+        <!-- Content -->
+        <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+          <div>
+            <h5 class="orange-text">
+              <i class="fa fa-desktop"></i> Software </h5>
+            <h3 class="card-title pt-2">
+              <strong> Desktop Application Development </strong>
+            </h3>
+            <p>
+              We have creative and competent desktop application developers for all Operasting System platforms. These developers have
+              a broad scope of knowledge when it comes to using visual studio tools, Electron Framework etc for Desktop Application
+              development. Therefore, if you need an application that monitors activities in your business from your PC,
+              NexTech developers can develop that for you.
+            </p>
+            <a class="btn btn-deep-orange waves-light" (click)="desktopdev.show()" mdbRippleRadius>
+              <i class="fa fa-clone left"></i> View project</a>
+          </div>
+        </div>
+        <!-- Content -->
+        <!-- modal -->
+        <div mdbModal #desktopdev="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+          aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+          <div class="modal-dialog modal-fluid" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="desktopdev.hide()">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title w-100" id="myModalLabel">Desktop Application Development</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="assets/desktop.png" alt="oops!! image unavailable">
+                  </div>
+                  <div class="col-md-6">
+                    We develop both simple and complex Desktop Applications depending on the clients Operating systems. There are no compatibility
+                    issues with our Applications since we develop applications based on the client's computer specs.
+                    <h4>We use various frameworks that include:</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item"> JIDE Desktop Application framework </li>
+                      <li class="list-group-item"> Open-source framework for cross-platform Desktop apps </li>
+                      <li class="list-group-item"> APPJS framework to develop javascript desktop apps </li>
+                      <li class="list-group-item"> Visual studio code to develop Web desktop apps using C# </li>
+                      <li class="list-group-item"> Electron framework to develop native desktop apps </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-light" aria-label="Close" (click)="desktopdev.hide()" mdbRippleRadius>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p id="hire-us">
+        <a href="" class="btn btn-outline-green" routerLink="/contact"> HIRE US </a>
+      </p>
+    </div>
+  </div>
+  <div id="space"> </div>
+
+  <section id="more-services">
+    <div class="row">
+      <div class="col-md-12" id="more-services-header">
+        <h4>Nextech is built on team work as the main foundation. Individual developers rely on each other to ensure they produce
+          high quality products for their clients.</h4>
+      </div>
+    </div>
+    <div id="space"></div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h4 class="title"> Here's an overview of all the services we offer : </h4>
+
+        <div id="space"> </div>
+        <div id="space"> </div>
+
+        <!--Projects section v.3-->
+        <section class="section extra-margins">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+
+              <!--Image-->
+              <img src="assets/www.jpg" alt="Sample project image" class="img-fluid z-depth-2">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+
+              <!--Grid row-->
+              <div class="row mb-3">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-dashboard fa-lg cyan-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title font-bold">Content Management Systems</h5>
+                  <p class="white-text">
+                    At NexTech we build Content Management Systems to help our clients create and manage digital content remotely from their
+                    Personal Computers.
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row mb-3">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-mobile fa-lg red-text"></i>
+                </div>
+                <div class="col-10 ">
+                  <h5 class="feature-title font-bold">Smart-phone Application</h5>
+                  <p class="white-text">
+                    We also have competent app developers here ata NexTech. We develop Android, cross-platform web and native applications. Applications
+                    are developed depending on client prefence or based on target users.
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Third row-->
+              <div class="row">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-money fa-lg brown-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title font-bold">Finance Management Systems</h5>
+                  <p class="white-text">
+                    The dedicated developers at Nextech are working around the clock to develop secure e-commerce systems that we can trust with
+                    our financial information. We ensure security by facilitating encrypted transactions among other technologies
+                    to deny malicious individuals access.
+                  </p>
+                </div>
+              </div>
+              <!--/Third row-->
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <hr>
+
+          <!--Grid row-->
+          <div class="row pt-5">
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-xl-7 mb-3">
+
+              <!--Grid row-->
+              <div class="row mb-3">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-search light-green-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title font-bold">Search Engine Optimization</h5>
+                  <p class="white-text">
+                    We dont stop at developing an online platform for you. We use various legal techniques to ensure your plaform is easily available
+                    in various search engine to ensure effective Digital Marketting.
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row mb-3">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-signal fa-lg pink-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title font-bold">Network and Communication</h5>
+                  <p class="white-text">
+                    Our team also comprises of certified internetworking personel who are cisco certified to guarantee excellent networking and
+                    communication solutions.
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Third row-->
+              <div class="row mb-3">
+                <div class="col-1 mr-1">
+                  <i class="fa fa-photo fa-lg amber-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title font-bold">Graphical Design</h5>
+                  <p class="white-text">
+                    We have the most creative graphical designers with a high level of expertise in various forms of graphical design. They have
+                    incredible skills in using various tools in the field to ensure best designs.
+                  </p>
+                </div>
+              </div>
+              <!--/Third row-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-xl-5 mb-3">
+
+              <!--Image-->
+              <img src="assets/dev.png" alt="Sample project image" class="img-fluid z-depth-2">
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+        </section>
+        <!--Projects section v.3-->
+
+
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </section>
+
+</main>
+<footer class="page-footer" style="padding-top: 5px">
+  <div class="teal darken-4">
+    <div class="container-fluid container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="center">About NexTech</h3>
+          <hr style="background-color: whitesmoke">
+          <ul class="navbar-nav nav">
+            <li>
+              <a href="/about">Company Information</a>
+            </li>
+            <li>Privacy Policy</li>
+            <li>Terms of use</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Social</h3>
+          <hr style="background-color: whitesmoke">
+          <p> Stay up-to-date through our social media channels:</p>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/Nextech-416000388842667/" style="background-color: transparent" class=" waves-effect waves-light">
+                <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.twitter.com/Nextechdevs/" style="background-color: transparent" class=" waves-effect waves-light">
+                <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Important Links</h3>
+          <hr style="background-color: whitesmoke">
+          <ul>
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+            <li>
+              <a href="#!">Business Partnerships</a>
+            </li>
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container-fluid" style="background-color: #046738">
+      <p>All Rights Reserved |&copy; 2018 | NexTech</p>
+    </div>
+  </div>
+</footer>

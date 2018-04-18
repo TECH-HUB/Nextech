@@ -20,9 +20,9 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <!-- <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
-        </li> -->
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/services" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
+        </li>
         <li class="nav-item waves-light" mbdRippleRadius>
           <a routerLink="/portifolio" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">PORTFOLIO</a>
         </li>
@@ -133,10 +133,8 @@ Nextech is an expertised team that came up to focus on what the customer what tr
               <hr>
               <div class="card-text">
                  Frankline is a proactive web developer and database modeler with transferable skills and autodidact programming and professional
-                skills. His strongest technical expertise is server side development (PHP  and SQL MySql) and responsive web design
-                with Bootstrap and Angularjs .Frank is also a hybrid android developer using <a href="https://ionicframework.com/" target="_blank">Ionic</a> 
-                <br>
-                <br>
+                skills. His strongest technical expertise is server side development(PHP and MySql) and responsive web design
+                with Bootstrap and Angularjs .Frank is also a hybrid android developer using <a href="https://ionicframework.com/" target="_blank">Ionic</a>
        At free time Frank is a DIY person (Do It Yourleft).
 
               </div>
@@ -158,28 +156,9 @@ Nextech is an expertised team that came up to focus on what the customer what tr
               <div class="card-text">
                  Sammy is With a rich experience of more than 4 years, Sammy (Guru | Greatest of all time) is Nextech CTO and an outstanding backend
                 developer with a focus on PHP (Laravel) ,Angularjs ,UIkit and Python (Django).
-                 When Sammy isn’t in front of his computer he spends his time hacking as hobby.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <div class="view overlay hm-zoom">
-                <img src="assets/4.png" class="img-fluid">
-                <a href="#!">
-                  <div class="mask"></div>
-                </a>
-              </div>
-              <div class="card-title">
-                <h4>Paul Mbugua</h4>
-              </div>
-              <hr>
-              <div class="card-text">
-                Paul is always on the design of every bit of Nextech ,creating of fancy looking and leaking finger design
-                that is well materialised. He has the tools and skill that is just right for the customer. Paul likes to dance during 
-                his free time.
+                <br>When Sammy isn’t in front of his computer he spends his time hacking as hobby.
+                <br>
+                <br>
               </div>
             </div>
           </div>
@@ -204,8 +183,57 @@ Nextech is an expertised team that came up to focus on what the customer what tr
               <hr>
               <div class="card-text">
          Mike Muchira (Sir Stark) is a full stack web developer with a 3-year experience in the programming field. He majors in responsive websites and cross-platform web application development. His focus
-        is mainly on PHP, JavaScript, SQL and Mongo database among other APIs and Frameworks. Apart from writing code, Stark is writer
+        is mainly on PHP, JavaScript, SQL and Mongo database among other APIs and Frameworks.Stark is writer
         focusing on computer science research papers and blog articles.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="view overlay hm-zoom">
+                <img src="assets/4.png" class="img-fluid">
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-title">
+                <h4>Paul Mbugua</h4>
+              </div>
+              <hr>
+              <div class="card-text">
+                Paul is always on the design of every bit of Nextech ,creating of fancy looking and leaking finger design that is well materialised.
+                He has the tools and skill that is just right for the customer. Not forgeting his role as a Laravel programmer when
+                need arises.Paul likes to dance during his free time.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row members">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="view overlay hm-white-light">
+              <img src="" class="img-fluid">
+              <a href="#!">
+                <div class="mask waves-effect waves-light"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="view overlay hm-zoom">
+                <img src="assets/peter.jpg" class="img-fluid " alt="">
+                <div class="mask">
+                </div>
+              </div>
+              <div class="card-title">
+                <h4>Peter Karanja</h4>
+              </div>
+              <hr>
+              <div class="card-text">
+                 Skills Radio frequency Microwave technology, both Bespoke and Ceragon Last mile fiber termination and integration over Gpon
+                and AR routers Cisco routers and mikrotik configurations MPLS networking LAN building skills, Configurations of all access
+                points ruckus, unified, nanostations etc . 4G LTE GSM
               </div>
             </div>
           </div>
@@ -214,7 +242,7 @@ Nextech is an expertised team that came up to focus on what the customer what tr
     </div>
   </section>
 </main>
-<footer class="page-footer" style="margin-bottom: 0px">
+<footer class="page-footer" style="padding-top: 5px">
   <div class="teal darken-4">
     <div class="container-fluid container">
       <div class="row">
@@ -222,7 +250,9 @@ Nextech is an expertised team that came up to focus on what the customer what tr
           <h3 class="center">About NexTech</h3>
           <hr style="background-color: whitesmoke">
           <ul class="navbar-nav nav">
-            <li>Company Information</li>
+            <li>
+              <a href="/about">Company Information</a>
+            </li>
             <li>Privacy Policy</li>
             <li>Terms of use</li>
           </ul>
@@ -235,40 +265,42 @@ Nextech is an expertised team that came up to focus on what the customer what tr
             <li class="nav-item">
               <a href="https://www.facebook.com/Nextech-416000388842667/" style="background-color: transparent" class=" waves-effect waves-light">
                 <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
-              </li>
-              <li class="nav-item">
-                <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</li>
-                <li class="nav-item">
-                  <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h3>Important Links</h3>
-                <hr style="background-color: whitesmoke">
-                <ul>
-                  <li>
-                    <a href="#!">Products</a>
-                  </li>
-                  <li>
-                    <a href="#!">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#!">Business Partnerships</a>
-                  </li>
-                  <li>
-                    <a href="#!">About Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.twitter.com/Nextechdevs/" style="background-color: transparent" class=" waves-effect waves-light">
+                <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
+          </ul>
         </div>
-        <div class="footer-copyright">
-          <div class="container-fluid" style="background-color: #046738">
-            <p>All Rights Reserved |&copy; 2018 | NexTech</p>
-          </div>
+        <div class="col-md-4">
+          <h3>Important Links</h3>
+          <hr style="background-color: whitesmoke">
+          <ul>
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+            <li>
+              <a href="#!">Business Partnerships</a>
+            </li>
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+          </ul>
         </div>
-      </footer>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container-fluid" style="background-color: #046738">
+      <p>All Rights Reserved |&copy; 2018 | NexTech</p>
+    </div>
+  </div>
+</footer>
       
       
       

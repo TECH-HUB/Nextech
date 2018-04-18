@@ -19,9 +19,9 @@
         <li class="nav-item waves-light" mdbRippleRadius>
           <a class="nav-link nav-a" routerLink="/about" style="color:#000000;font-family:Fjalla One; font-size: 15px; font-weight: bold;">ABOUT US</a>
         </li>
-        <!-- <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
-        </li> -->
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a routerLink="/services" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">SERVICES</a>
+        </li>
         <li class="nav-item waves-light" mbdRippleRadius>
           <a routerLink="/portifolio" class="nav-link" style="color:#212733;font-family:Fjalla One; font-size: 15px; font-weight: bold;">PORTFOLIO</a>
         </li>
@@ -57,9 +57,12 @@
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
         <div class="carousel-caption animated bounceIn text-center">
-          <h2 class="h2-responsives">RESPONSIVE WEBDESIGN FOR <br/>YOUR BUSINESS</h2>
-          <p class="hidden-md">Nextech has a team of skilled experts in Responsive Web Design in Kenya, 
+          <h2 class="h2-responsives d-none d-sm-block ">RESPONSIVE WEBDESIGN FOR <br/>YOUR BUSINESS</h2>
+          <p class="d-none d-sm-block">Nextech has a team of skilled experts in Responsive Web Design in Kenya, 
             <br/>experienced in the latest web design technologies.</p>
+            <p class="phone d-block d-sm-none">
+               RESPONSIVE WEBDESIGN
+            </p>
         </div>
       </div>
     </mdb-slide>
@@ -72,9 +75,12 @@
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
         <div class="carousel-caption animated bounceIn">
-          <h2 class="h2-responsives">VERSATILE SOFTWARES DEVELOPMENT <br/> FOR YOU...</h2>
-          <p>Our software is built using the latest two-tier technology. It can work both <br/> online and locally through an intranet thereby
+          <h2 class="h2-responsives d-none d-sm-block">VERSATILE SOFTWARES DEVELOPMENT <br/> FOR YOU...</h2>
+          <p class="d-none d-sm-block">Our software is built using the latest two-tier technology. It can work both <br/> online and locally through an intranet thereby
           enabling you to access from any location</p>
+          <p class="phone d-block d-sm-none">
+          SOFTWARES DEVELOPMENT
+          </p>
         </div>
       </div>
 
@@ -87,10 +93,13 @@
           <div class="mask waves-light" mdbRippleRadius></div>
         </div>
         <div class="carousel-caption animated bounceIn">
-          <h2 class="h2-responsives">SOFTWARE CONSULTACY ON WIDE KNOWLEDGE ON HANDLING CHALLENGES</h2>
-          <p>
+          <h2 class="h2-responsives d-none d-sm-block">SOFTWARE CONSULTACY ON WIDE KNOWLEDGE ON HANDLING CHALLENGES</h2>
+          <p class="d-none d-sm-block">
              NexTech developers are an expert, affordable IT consulting firm in Kenya providing <br/>advisory and managerial services that will meet any of
             your short, or long-term IT objectives.
+          </p>
+          <p class="phone d-block d-sm-none">
+             SOFTWARE CONSULTACY
           </p>
         </div>
       </div>
@@ -102,7 +111,7 @@
   <div class="">
     <div class="text-center">
     <h4 class="">Your success is our success. We have a number of effective solutions for your business.</h4>
-    <p>
+    <p class="d-none d-sm-block">
       Visit our resources page and browse through our list of free and open source solutions for your business.
       your business process efficient
     </p>
@@ -251,7 +260,9 @@
                 <h3 class="center">About NexTech</h3>
                 <hr style="background-color: whitesmoke">
                 <ul class="navbar-nav nav">
-                  <li>Company Information</li>
+                  <li>
+                    <a href="/about">Company Information</a>
+                  </li>
                   <li>Privacy Policy</li>
                   <li>Terms of use</li>
                 </ul>
@@ -265,10 +276,10 @@
                     <a href="https://www.facebook.com/Nextech-416000388842667/" style="background-color: transparent" class=" waves-effect waves-light">
                       <i class="fa fa-facebook" style="margin-right: 10px"></i>Facebook</a>
                   </li>
-                <li class="nav-item">
-                  <a href="https://www.twitter.com/Nextechdevs/" style="background-color: transparent" class=" waves-effect waves-light">
-                    <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</a>
-                </li>
+                  <li class="nav-item">
+                    <a href="https://www.twitter.com/Nextechdevs/" style="background-color: transparent" class=" waves-effect waves-light">
+                      <i class="fa fa-twitter" style="margin-right: 10px"></i>Twitter</a>
+                  </li>
                   <li class="nav-item">
                     <i class="fa fa-instagram" style="margin-right: 10px"></i>Instagram</li>
                 </ul>
@@ -290,13 +301,13 @@
                     <a href="#!">About Us</a>
                   </li>
                 </ul>
-                </div>
               </div>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container-fluid" style="background-color: #046738">
-              <p>All Rights Reserved |&copy; 2018 | NexTech</p>
-            </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container-fluid" style="background-color: #046738">
+            <p>All Rights Reserved |&copy; 2018 | NexTech</p>
           </div>
-        </footer>
+        </div>
+      </footer>
