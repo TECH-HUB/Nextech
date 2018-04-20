@@ -11,7 +11,8 @@ import {RouterModule} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
-import { ServicesComponent } from './services/services.component'
+import { ServicesComponent } from './services/services.component';
+import { ErrorPageComponent } from './error-page/error-page.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ServicesComponent } from './services/services.component'
     AboutComponent,
     ContactComponent,
     PortifolioComponent,
-    ServicesComponent
+    ServicesComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
