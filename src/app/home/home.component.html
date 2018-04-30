@@ -108,33 +108,35 @@
   </mdb-carousel>
 </div>
 <section class="text-muted main-info">
-  <div class="">
+  <div class="text-center">
     <div class="text-center">
     <h4 class="">Your success is our success. We have a number of effective solutions for your business.</h4>
     <p class="d-none d-sm-block">
       Visit our resources page and browse through our list of free and open source solutions for your business.
-      your business process efficient
+      <a routerLink="/contact">Contact us</a> for more information.
     </p>
     </div>
-    <div class="text-center">
-    <a href="" class="btn btn-outline-green">Browse Our Products</a>
-    </div>
+    <a routerLink="/contact" class="btn btn-outline-green">Browse Our Products</a>
   </div>
 </section>
-<section  id="services">
+<section  id="services" style="background-image: url(assets/header.jpg);background-repeat: no-repeat;">
   <div class="container">
-    <div class="text-center">
+    <div class="text-center d-none d-sm-block">
       <h4 class="services-h4">
-        <strong>What We Offer</strong>
-        <hr>
+        <strong style="color:#fafafa">What We Offer</strong>
+         <hr>
       </h4>
     </div>
+    <h4 class="text-center text-white phone-h4 d-block d-sm-none">
+       What We Offer
+       <hr>
+    </h4>
     <p class="text-center" style="color: #ffff;">
       Read through some of the products and services we offer to our valuble clients
     </p>
-    <div class="row">
-      <div class="col-md-6" col-md-6>
-        <h4>
+    <div class="row" style="margin-bottom: 15px">
+      <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+        <!-- <h4>
           <span>
             <i class="fa fa-laptop md"></i>
           </span>Responsive Web Design</h4>
@@ -145,10 +147,21 @@
             leads. We specialize in creating a one stop shop, professional, unique and value for money product that will facilitate
             a good brand while increasing profitability. We offer exciting effects that will create a modern, vibrant and visually
             pleasing site.
-          </p>
+          </p> -->
+          <div class="card ">
+            <div class="card-body">
+              <div class="card-title">
+                <h4><span>
+                <i class="fa fa-laptop md" ></i>
+              </span>Responsive Web Design</h4></div>
+               We have a team of skilled experts in Responsive Web Design in Kenya, experienced in the latest web design technologies in
+              the market and who keep abreast of recent developments in the technologies used to develop your website.We translate your requirements and concept idea to a truly unique website within which you can meet your customer needs and
+              increase sales leads.
+            </div>
+          </div>
         </div>
-        <div class="col-md-6" col-md-6>
-          <h4>
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="0.8s">
+          <!-- <h4>
             <span>
               <i class="fa fa-search"></i>
             </span>Search Engine Optimization</h4>
@@ -159,12 +172,25 @@
               such as Google, MSN, Bing, Yahoo etc therefore the need for SEO. There are many factors that affect your rank in these search
               engines and they are all changing all the time. We at Sador IT Firm are experts in SEO in Kenya and work very hard to keep
               up-to-date with the best and most effective techniques in search engine optimization.
-            </p>
+            </p> -->
+            <div class="card">
+              <div class="card-body" style="padding-bottom: 45px">
+                <div class="card-title">
+                  <h4>
+                    <span>
+                      <i class="fa fa-search"></i>
+                    </span>Search Engine Optimization</h4>
+                </div>
+                 Having a website alone is not enough. There are many factors that affect your rank in these search engines and they are all changing all the time. We at Nextech
+                are experts in SEO in Kenya and work very hard to keep up-to-date with the best and most effective techniques in
+                search engine optimization.
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6" col-md-6>
-            <h4><span>
+          <div class="col-md-6 wow slideInLeft" data-wow-delay="1s">
+            <!-- <h4><span>
               <i class="fa fa-android"></i>
             </span>Software Development</h4>
             <p class="text-left" style="color:#DADADA;">
@@ -174,10 +200,23 @@
               our software into your website through a plug in or build you a new website using our own software. This gives you the added
               advantage of one point of entry for your whole business. Any information entered into our software modules can be published
               to your website at the touch of a button.
-            </p>
+            </p> -->
+            <div class="card" style="margin-bottom: 10px">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>
+                    <span>
+                      <i class="fa fa-android"></i>
+                    </span>Software Development</h4>
+                </div>
+                Our software is built using the latest two-tier technology. It can work both online and locally through an intranet thereby
+                enabling you to access from any location and use to remotely manage all the locations your business may operate in from any
+                one centralized location or even from your mobile phone.
+              </div>
+            </div>
           </div>
-          <div class="col-md-6"col-md-6>
-            <h4>
+          <div class="col-md-6 wow slideInUp" data-wow-delay="1.1s">
+            <!-- <h4>
               <span>
                 <i class="fa fa-globe"></i>
               </span>IT Consulting</h4>
@@ -187,7 +226,20 @@
                 end up costing way in excess of your initial expectations. If you need help with a special project involving your IT assets
                 and/or consulting, we're eager to assist you. We are an expert, affordable IT consulting firm in Kenya providing advisory
                 and managerial services that will meet any of your short, or long-term IT objectives.
-              </p>
+              </p> -->
+              <div class="card">
+                <div class="card-body" style="padding-bottom: 45px">
+                  <div class="card-title">
+<h4>
+  <span>
+    <i class="fa fa-globe"></i>
+  </span>IT Consulting</h4>
+                  </div>
+                   If you need help with a special project involving your IT assets and/or consulting, we're eager to assist you. We are an
+                  expert, affordable IT consulting firm in Kenya providing advisory and managerial services that will meet any of your short,
+                  or long-term IT objectives.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -198,35 +250,40 @@
             <strong>Our Recent Work</strong>
             <hr>
           </h4>
-          <p class="text-center" style="color: #ffff;">
+          <p class="text-center" style="color: #046738">
             Look at some of the recent projects we have completed for our valuble clients
           </p>
           
-            <div class="row">
-              <div class="col-md-3" col-md-3 >
-                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+            <div class="row wow slideInUp" data-wow-delay="0.6s">
+              <div class="col-md-6">
+                <div class="view overlay hm-black-strong" >
                   <img src="assets/project1.png" class="img-fluid" />
                   <div class="mask flex-center">
-                    <a href="https://smm.co.ke" class="white-text" target="_blank">
-  <h2>
-    <i class="fa fa-link"></i>
+                    <a href="http://lanev.co.ke" class="white-text text-center" target="_blank">
+                     
+  <h2 class="text-center">
+Lanev company offers a variety of services and supplies for instituition.
   </h2>
+  <button class="btn btn-sm btn-outline-white">Visit Page</button>
                       </a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3" col-md-3>
-                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
-                  <img src="assets/forum.jpg" class="img-fluid" />
+              <div class="col-md-6">
+                <div class="view overlay hm-black-strong">
+                  <img src="assets/project2.png" class="img-fluid" />
                   <div class="mask flex-center">
-                    <a href="https://forum.nextechdevelopers.com" target="_blank" class="white-text">
-  <h2><i class="fa fa-link"></i></h2>
+                    <a href="https://forum.nextechdevelopers.com" target="_blank" class="text-center white-text">
+  <h2 class="text-center">
+    The forum is where developers interact and solve problems together.
+  </h2>
+  <button class="btn btn-sm btn-outline-white">Visit Page</button>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3" col-md-3 >
-                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+              <!-- <div class="col-md-3" col-md-3 >
+                <div class="view overlay hm-black-strong">
                   <img src="assets/finance.png" class="img-fluid" />
                   <div class="mask flex-center">
                     <a href="https://example.com" target="_blank" class="white-text">
@@ -238,7 +295,7 @@
                 </div>
               </div>
               <div class="col-md-3" col-md-3>
-                <div class="view overlay hm-black-strong" style="height: 162px;width: 270px">
+                <div class="view overlay hm-black-strong">
                   <img src="assets/finance.png" class="img-fluid" />
                   <div class="mask flex-center">
                     <a href="https://example.com" target="_blank" class="white-text">
@@ -248,7 +305,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
         </div>
       </section>
